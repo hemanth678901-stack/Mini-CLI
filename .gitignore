@@ -1,0 +1,7 @@
+.venv
+.pytest_cache
+src/__pycache__
+src/.pytest_cache
+src/system.log
+tests/__pycache__
+tests/.pytest_cache
