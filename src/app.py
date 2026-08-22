@@ -1,14 +1,19 @@
 import logging
 from pathlib import Path
+
+# Setting up the basic config.
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
-handler = logging.FileHandler("system.log")
+handler = logging.FileHandler("System.log")
 formatter = logging.Formatter("%(asctime)s - %(message)s - %(error)s")
 handler.setFormatter(formatter)
 
 directory = Path("data")
+
+# A class for custom exception.
 class EmptyContentError(Exception):
     def __init__(self, message):
+        # Initialize the base exception with custom error message.
         super().__init__(message)
 
 def write_file(directory , filename: str, content: str):

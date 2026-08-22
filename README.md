@@ -21,10 +21,14 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Runnign tests
+## Running tests
 
 ```bash
 python -m pytest
 ```
+
+### NOTE
+
+Run all the CLI commands and test suites from the project root directory.
 
 
